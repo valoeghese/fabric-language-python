@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricpy",
+  "version": "1.0.0",
+  
+  "name": "Fabricpy",
+  "description": "Mod Description.",
+  "authors": [
+    "Me!"
+  ],
+  
+  "icon": "assets/fabricpy/icon.png",
+  "license": "No Licence.",
+  
+  "environment": "*",
+  
+  "entrypoints": {
+    "main": [
+      "valoeghese.fabricpy.Fabricpy"
+    ]
+  },
+  
+  "requires": {
+    "fabricloader": ">=0.4.0"
+  },
+  
+  "mixins": [
+    "fabricpy.mixins.json"
+  ]
+}
