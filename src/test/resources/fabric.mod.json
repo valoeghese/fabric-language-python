@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricpy",
+  "version": "1.0.0",
+  
+  "name": "Fabric Python Test",
+  "description": "Mod Description.",
+  "authors": [
+    "Me!"
+  ],
+  
+  "icon": "assets/fabricpy/icon.png",
+  "license": "No Licence.",
+  
+  "environment": "*",
+  
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "python",
+        "value": "valoeghese.fabricpytest.main"
+      }
+    ]
+  },
+  
+  "requires": {
+    "fabricloader": ">=0.4.0"
+  }
+}

@@ -1,23 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "fabricpy",
-  "version": "1.0.0",
+  "id": "fabric-language-python",
+  "version": "0.1.0",
   
-  "name": "Fabricpy",
+  "name": "Fabric Language Python",
   "description": "Mod Description.",
   "authors": [
-    "Me!"
+    "Mekal \"Valoeghese\" Covic"
   ],
   
   "icon": "assets/fabricpy/icon.png",
-  "license": "No Licence.",
+  "license": "Apache 2.0 Licence",
   
   "environment": "*",
   
-  "entrypoints": {
-    "main": [
-      "valoeghese.fabricpy.Fabricpy"
-    ]
+  "languageAdapters": {
+    "python": "valoeghese.fabricpy.PythonLangugeAdapter"
   },
   
   "requires": {
