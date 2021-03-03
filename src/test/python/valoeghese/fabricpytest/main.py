@@ -1,2 +1,3 @@
+from java.lang import System
 
-print("Hello, World!")
+System.out.println("Hello, Fabric World!")
