@@ -12,6 +12,6 @@ public class Fabricpy implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// Add init code here!
+		
 	}
 }

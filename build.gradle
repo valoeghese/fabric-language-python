@@ -1,5 +1,5 @@
 plugins {
-	id "fabric-loom" version "0.5-SNAPSHOT"
+	id "fabric-loom" version "0.6-SNAPSHOT"
 	id "maven-publish"
 	id "com.jfrog.artifactory" version "4.15.2"
 }
@@ -26,13 +26,14 @@ repositories {
 		url = "https://maven.onyxstudios.dev"
 	}
 	maven { url 'https://jitpack.io' }
+	mavenCentral();
 }
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_build}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	
+	implementation fileTree('libs') { include '*.jar' }
 
 	compileOnly "com.google.code.findbugs:jsr305:3.0.2"
 }
