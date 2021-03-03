@@ -17,7 +17,7 @@ public class PythonLangugeAdapter implements LanguageAdapter {
 	public <T> T create(ModContainer mod, String value, Class<T> type) throws LanguageAdapterException {
 		try {
 			if (type == ModInitializer.class) {
-				String code = loadAsString(value.replace('.', '/'));
+				String code = loadAsString(value.replace('.', '/') + ".py");
 				ModInitializer result = () -> new SharedInterpreter().exec(code);
 				return (T) result;
 			} else {
