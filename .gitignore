@@ -21,9 +21,11 @@
 # Sekrit files
 private.properties
 private.gradle
+shit/
 
 # Files from bad operating systems :^)
 Thumbs.db
 .DS_Store
 local.properties
 .directory
+
